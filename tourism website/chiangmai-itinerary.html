@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bangkok Itinerary</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+      background: url('chiang_mai_bg.jpg') no-repeat center center/cover;
+      background-attachment: fixed;
+      position: relative;
+      color: #333;
+    }
+
+    /* Add an overlay layer for blur effect */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.3); /* semi-transparent */
+      backdrop-filter: blur(6px);
+      z-index: -1;
+    }
+
+    .header-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* centers the header horizontally */
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .header-container .back {
+      align-self: flex-start; /* keeps back button on the left */
+      margin-bottom: 20px;
+      color: teal;
+      text-decoration: none;
+      font-weight: bold;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .header-container .back:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      color: teal;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 8px 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      text-align: center;
+      display: inline-block;
+    }
+
+    h2 {
+      color: teal;
+    }
+
+    .itinerary {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      margin-bottom: 40px;
+      align-items: flex-start;
+    }
+
+    .day-text {
+      flex: 2;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .day-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .day-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="header-container">
+    <a href="index.html" class="back">← Back to Destinations</a>
+    <h1>3-Day Chiang Mai Itinerary</h1>
+  </div>
+
+  <div class="itinerary">
+    <div class="day-text">
+      <h2>Day 1: Temples & Old City</h2>
+      <ul>
+        <li><b>Morning:</b> Wat Phra Singh, Wat Chedi Luang</li>
+        <li><b>Lunch:</b> Khao Soi Nimman or a local cafe in the Old City</li>
+        <li><b>Afternoon:</b> Explore Old City walls & moat, Lanna Folklife Museum</li>
+        <li><b>Evening:</b> Dinner at a riverside restaurant, Night Bazaar</li>
+      </ul>
+    </div> 
+    <div class="day-image">
+      <img src="kao_soy_nimman.jpg" alt="Day 1 Chiang Mai" />
+    </div>
+  </div>
+
+  <div class="itinerary">
+    <div class="day-text">
+      <h2>Day 2: Nature and Adventure</h2>
+      <ul>
+        <li><b>Morning:</b> Doi Suthep Temple & Bhubing Palace</li>
+        <li><b>Lunch:</b> Local street food near Doi Suthep or Nimmanhaemin area</li>
+        <li><b>Afternoon:</b> Elephant Nature Park (ethical sanctuary)</li>
+        <li><b>Evening:</b> Explore Sunday Walking Street Market (if Sunday), or relax at a local spa</li>
+      </ul>
+    </div>
+    <div class="day-image">
+      <img src="bhubing_palace.jpg" alt="Day 2 Chiang Mai" />
+    </div>
+  </div>
+
+  <div class="itinerary">
+    <div class="day-text">
+      <h2>Day 3: Local Culture & Countryside</h2>
+      <ul>
+        <li><b>Morning:</b> Cooking class or handicraft village (Bo Sang Umbrella Village)</li>
+        <li><b>Lunch:</b> Sample northern Thai specialties</li>
+        <li><b>Afternoon:</b> Biking tour around rice paddies or visit Mae Sa Waterfall</li>
+        <li><b>Evening:</b> Dinner at a rooftop bar or riverside café, explore Nimman nightlife</li>
+      </ul>
+    </div>
+    <div class="day-image">
+      <img src="mae_sa_waterfall.webp" alt="Day 3 Chiang Mai" />
+    </div>
+  </div>
+</body>
+</html>
